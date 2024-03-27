@@ -13,5 +13,5 @@ with open('students.csv', encoding='utf8') as file:
             el[-1] = round(sum_class[el[-2]] / count_class[el[-2]], 3)
 with open('students_new.csv', 'w', encoding='utf8', newline='') as file:
     w = csv.writer(file, delimiter=',')
-    w.writerow(['id', 'Namee', 'titleProject_id', 'class', 'score'])
+    w.writerow(['id', 'Name', 'titleProject_id', 'class', 'score'])
     w.writerows(reader)
