@@ -1,5 +1,5 @@
-import csv
-with open('students.csv', encoding='utf8') as file:
+import csv  # Подгружаем библиотеку csv для работы с файлами .csv
+with open('students.csv', encoding='utf8') as file:  # открываем файл students.csv
     reader = list(csv.reader(file, delimiter=','))[1:]
     count_class = {}
     sum_class = {}
