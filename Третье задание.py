@@ -1,6 +1,6 @@
 import csv  # Подгружаем библиотеку csv для работы с файлами .csv
 with open('students.csv', encoding='utf8') as file:  # открываем файл students.csv
-    reader = list(csv.DictReader(file, delimiter=',', quotechar='"'))[1:]
+    reader = list(csv.DictReader(file, delimiter=','))[1:]
     data = sorted(reader, key=lambda x: x['titleProject_id'])
 input_id = input('Введите id проекта')
 while input_id != 'СТОП':
